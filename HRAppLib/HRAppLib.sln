@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAppLib", "HRAppLib\HRAppLib.csproj", "{386D93B9-881C-4CB6-89EC-F01ED81C5AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAppWebApp", "HRAppWebApp\HRAppWebApp.csproj", "{22812FE4-BED4-4836-BB91-0F66248CBB22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{386D93B9-881C-4CB6-89EC-F01ED81C5AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386D93B9-881C-4CB6-89EC-F01ED81C5AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386D93B9-881C-4CB6-89EC-F01ED81C5AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386D93B9-881C-4CB6-89EC-F01ED81C5AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22812FE4-BED4-4836-BB91-0F66248CBB22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22812FE4-BED4-4836-BB91-0F66248CBB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22812FE4-BED4-4836-BB91-0F66248CBB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22812FE4-BED4-4836-BB91-0F66248CBB22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2BC0966-4292-4184-84ED-81662DB6ECAD}
+	EndGlobalSection
+EndGlobal
