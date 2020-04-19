@@ -11,17 +11,43 @@ namespace HRAppLib.Entities
         private readonly int _employeeId;
         public int EmployeeId =>_employeeId;
 
-        private string _name;
-        public string Name
+        private string _firstName;
+        public string FirstNameme
         {
-            get => _name;
+            get => _firstName;
             set
             {
                 if (string.IsNullOrEmpty(value))
-                    throw new ArgumentException("Employee name cannot be blank");
-                _name = value;
+                    throw new ArgumentException("Employee First name cannot be blank");
+                _firstName = value;
             }
         }
+
+        private string _lastName;
+        public string lastName
+        {
+            get => _lastName;
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException("Employee Last name cannot be blank");
+                _lastName = value;
+            }
+        }
+
+        private string _role;
+        public string Role
+        {
+            get => _role;
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException("Employee Role cannot be blank");
+                _role = value;
+            }
+        }
+
+
 
         private float _hourlySalary;
         public float HourlySalary
