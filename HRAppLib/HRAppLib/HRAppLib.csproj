@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\ApplicantDAO.cs" />
+    <Compile Include="DAL\JobDAO.cs" />
     <Compile Include="Entities\Department.cs" />
     <Compile Include="Entities\Applicant.cs" />
     <Compile Include="Entities\Job.cs" />
@@ -48,8 +50,6 @@
     <Compile Include="Entities\Rank.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

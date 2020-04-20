@@ -12,7 +12,7 @@ namespace HRAppLib.Entities
         public int ApplicantId =>_applicantId;
 
         private string _firstName;
-        public string FirstNameme
+        public string FirstName
         {
             get => _firstName;
             set
@@ -24,7 +24,7 @@ namespace HRAppLib.Entities
         }
 
         private string _lastName;
-        public string lastName
+        public string LastName
         {
             get => _lastName;
             set
@@ -64,15 +64,46 @@ namespace HRAppLib.Entities
 
         public Department Department { get; set; }
         public Resume qualification { get; set; }
-        public Applicant(int employeeId, string name, float hourlySalary, Department department)
+        private string _email;
+        public string Email
         {
-            _employeeId = employeeId;
-            Name = name;
-            HourlySalary = hourlySalary;
-            Department=department;
+            get => _email;
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException("Applicant Email cannot be blank");
+                _email = value;
+            }
         }
 
-        public override string ToString() => $"{EmployeeId},{Name},{HourlySalary},{Department}";
+        private string _phone;
+        public string Phone
+        {
+            get => _phone;
+            set
+            {
 
+                _phone = value;
+            }
+        }
+
+        public Applicant(int applicantId, string firstNameme, string lastName, string role, bool isEmployed, float hourlySalary, Department department, Resume qualification, string email, string phone)
+        {
+            _applicantId = applicantId;
+            FirstName = firstNameme;
+            LastName = lastName;
+            Role = role;
+            _isEmployed = isEmployed;
+            HourlySalary = hourlySalary;
+            Department = department;
+            this.qualification = qualification;
+            Email = email;
+            Phone = phone;
+        }
+
+        public override string ToString()
+        {
+            return $"{ApplicantId}{FirstName},{LastName},{Role},{_isEmployed},{HourlySalary},{Department},{qualification},{Email},{Phone}";
+        }
     }
 }
