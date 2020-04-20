@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ApplicantWeb.master.cs" Inherits="HRAppWebApp.MasterContent.ApplicantWeb" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Job Application</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .MainMenu {
+            margin: 10px;
+            color: white;
+            font-size: large;
+        }
+
+        .MainMenu a {
+            color: white
+        }
+        .MainMenu ul {
+            background-color: black;
+        }
+        .MainMenu li {
+            margin: 5px;
+        }
+        .MainMenu li.dynamic {
+            margin: 10px;
+        }
+
+        .btn-container{
+            margin-bottom: 2em;
+        }
+        .title{
+            text-align: center;
+        }
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1 class="title">Employee Web</h1>
+            <div style="text-align: right;width:100%">
+                <asp:Label ID="LblMessage" runat="server"></asp:Label>
+                <asp:Button CssClass="btn-container" ID="BLogin" runat="server" text="Login" />
+                <asp:Button ID="BRegister" runat="server" text="Register"  OnClick="OnRegister"/>
+                <asp:Button CssClass="btn-container" ID="BLogout" runat="server" text="Logout" />
+            </div>
+            <div style="width: 100%; background-color: black">
+                <asp:Menu ID="MainMenu" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" CssClass="MainMenu"></asp:Menu>
+            </div>
+
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="BodyPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" ShowStartingNode="false" runat="server" />
+    </form>
+</body>
+</html>

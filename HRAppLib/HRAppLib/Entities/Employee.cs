@@ -12,7 +12,7 @@ namespace HRAppLib.Entities
         public int EmployeeId =>_employeeId;
 
         private string _firstName;
-        public string FirstNameme
+        public string FirstName
         {
             get => _firstName;
             set
@@ -24,7 +24,7 @@ namespace HRAppLib.Entities
         }
 
         private string _lastName;
-        public string lastName
+        public string LastName
         {
             get => _lastName;
             set
@@ -62,15 +62,16 @@ namespace HRAppLib.Entities
         }
 
         public Department Department { get; set; }
-        public Employee(int employeeId, string name, float hourlySalary, Department department)
+        public Employee(int employeeId, string firstName, string lastName, float hourlySalary, Department department)
         {
             _employeeId = employeeId;
-            Name = name;
+            FirstName = firstName;
+            LastName = lastName;
             HourlySalary = hourlySalary;
             Department=department;
         }
 
-        public override string ToString() => $"{EmployeeId},{Name},{HourlySalary},{Department}";
+        public override string ToString() => $"{EmployeeId},{FirstName},{HourlySalary},{Department}";
 
     }
 }
