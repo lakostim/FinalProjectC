@@ -8,6 +8,10 @@ namespace HRAppLib.Entities
 {
     public enum Rank
     {
-
+        Entry,
+        Intermediate,
+        Management,
+        Senior,
+        Executive
     }
 }
