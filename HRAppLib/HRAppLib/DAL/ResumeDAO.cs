@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HRAppLib.DAL
 {
-    public class JobDAO
+    public class ResumeDAO
     {
     }
 }
