@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DAL\ApplicantDAO.cs" />
     <Compile Include="DAL\DepartmentDAO.cs" />
+    <Compile Include="DAL\InterviewDAO.cs" />
     <Compile Include="DAL\JobDAO.cs" />
     <Compile Include="DAL\LibDS.Designer.cs">
       <AutoGen>True</AutoGen>

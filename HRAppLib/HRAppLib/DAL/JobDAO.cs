@@ -11,7 +11,7 @@ namespace HRAppLib.DAL
     public class JobDAO
     {
         private JobTableAdapter _jobTA = new JobTableAdapter();
-        LibDS.JobDataTable _jobDT = new LibDS.JobDataTable();
+        private LibDS.JobDataTable _jobDT = new LibDS.JobDataTable();
         public JobDAO()
         {
             _jobTA.Fill(_jobDT);
