@@ -30,7 +30,7 @@
 
 
       <div class="btn-register">
-          <asp:Button ID="BRegister" runat="server" Text="Register"></asp:Button>
+          <asp:Button ID="BRegister" runat="server" Text="Register" OnClick="BRegister_Click"></asp:Button>
       </div>
       
   </div>

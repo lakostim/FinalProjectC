@@ -26,11 +26,11 @@ namespace HRAppWebApp.MasterContent
         }
         protected void OnLogin(object sender, EventArgs e)
         {
-            Response.Redirect("~/Login.aspx");
+            Response.Redirect("~/Applicants/Login.aspx");
         }
         protected void OnRegister(object sender, EventArgs e)
         {
-            Response.Redirect("~/Register.aspx");
+            Response.Redirect("~/Applicants/Register.aspx");
         }
         protected void OnLogout(object sender, EventArgs e)
         {

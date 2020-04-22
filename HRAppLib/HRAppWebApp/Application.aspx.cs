@@ -20,5 +20,19 @@ namespace HRAppWebApp
                 //dashboardTitle.Text = $"Welcome to your dashboard {Context.User.Identity.Name}";
             }
         }
+
+        protected void BApply_Click(object sender, EventArgs e)
+        {
+            //Get all form data
+            String firstName = TxtFirstName.Text;
+            String lastName = TxtLastName.Text;
+            String address = TxtAddress.Text;
+            String previousJob = TxtPreviousJob.Text;
+            int phoneNumber = int.Parse(TxtPhone.Text);
+            String email = TxtEmail.Text;
+
+
+
+        }
     }
 }

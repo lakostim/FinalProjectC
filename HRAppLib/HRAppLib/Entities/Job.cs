@@ -8,5 +8,6 @@ namespace HRAppLib.Entities
 {
     class Job
     {
+
     }
 }

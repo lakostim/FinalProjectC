@@ -1,7 +1,9 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterContent/ApplicantWeb.Master" AutoEventWireup="true" CodeBehind="Application.aspx.cs" Inherits="HRAppWebApp.Application" %>
+﻿ <%@ Page Language="C#" MasterPageFile="~/MasterContent/ApplicantWeb.Master" AutoEventWireup="true" CodeBehind="Application.aspx.cs" Inherits="HRAppWebApp.Application" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="BodyPlaceHolder" runat="server">
   <div class="login-container">
+
+      <h3>Fill out the form below to apply</h3>
 
       <div class="input-box">
           <label>First Name</label>
@@ -14,23 +16,29 @@
       </div>
 
       <div class="input-box">
-          <label>Email</label>
-          <asp:TextBox ID="TxtEmail" runat="server"></asp:TextBox>
+          <label>Address</label>
+          <asp:TextBox ID="TxtAddress" runat="server"></asp:TextBox>
       </div>
 
       <div class="input-box">
-          <label>Username</label>
-          <asp:TextBox ID="TxtUsername" runat="server"></asp:TextBox>
+          <label>Previous Job</label>
+          <asp:TextBox ID="TxtPreviousJob" runat="server"></asp:TextBox>
       </div>
       <div class="input-box">
-          <label>Password</label>
-          <asp:TextBox ID="TxtPassword" runat="server" TextMode="Password"></asp:TextBox>
+          <label>Phone</label>
+          <asp:TextBox ID="TxtPhone" runat="server" TextMode="Number"></asp:TextBox>
       </div>
+
+      <div class="input-box">
+          <label>Email</label>
+          <asp:TextBox ID="TxtEmail" runat="server" TextMode="Email"></asp:TextBox>
+      </div>
+
 
 
 
       <div class="btn-register">
-          <asp:Button ID="BRegister" runat="server" Text="Register"></asp:Button>
+          <asp:Button ID="BApply" runat="server" Text="Apply" OnClick="BApply_Click"></asp:Button>
       </div>
       
   </div>

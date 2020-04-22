@@ -13,5 +13,17 @@ namespace HRAppWebApp.Applicants
         {
 
         }
+
+        protected void BRegister_Click(object sender, EventArgs e)
+        {
+            String firstName = TxtFirstName.Text;
+            String lastName = TxtLastName.Text;
+            String email = TxtEmail.Text;
+            String userName = TxtUsername.Text;
+            String password = TxtPassword.Text;
+
+            //Create Appicant Object
+            //Push applicant data into database
+        }
     }
 }

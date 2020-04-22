@@ -46,9 +46,9 @@
             <h1 class="title">Employee Web</h1>
             <div style="text-align: right;width:100%">
                 <asp:Label ID="LblMessage" runat="server"></asp:Label>
-                <asp:Button CssClass="btn-container" ID="BLogin" runat="server" text="Login" />
+                <asp:Button CssClass="btn-container" ID="BLogin" runat="server" OnClick="OnLogin" text="Login" />
                 <asp:Button ID="BRegister" runat="server" text="Register"  OnClick="OnRegister"/>
-                <asp:Button CssClass="btn-container" ID="BLogout" runat="server" text="Logout" />
+                <asp:Button CssClass="btn-container" ID="BLogout" runat="server" OnClick="OnLogout" text="Logout" />
             </div>
             <div style="width: 100%; background-color: black">
                 <asp:Menu ID="MainMenu" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" CssClass="MainMenu"></asp:Menu>
