@@ -18,6 +18,7 @@ namespace HRAppLib.DAL
 
         public DepartmentDAO()
         {
+
             _departmentsTableAdapter.Fill(_departmentsDataTable);
         }
 
