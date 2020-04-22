@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/**
+ * @author ${IanIbrahim}
+ * the class holds a Job object 
+ the job is a job posting or a new oppertunity for assossiation 
+ * ${tags}
+ */
 
 namespace HRAppLib.Entities
 {

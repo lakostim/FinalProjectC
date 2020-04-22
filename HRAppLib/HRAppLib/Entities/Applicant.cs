@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/**
+ * @author ${IanIbrahim}
+ *
+ * ${tags}
+ */
 //entity to form employee data object
 namespace HRAppLib.Entities
 {
@@ -63,7 +68,7 @@ namespace HRAppLib.Entities
         }
 
         public Department Department { get; set; }
-        public Resume qualification { get; set; }
+        public Resume Resume { get; set; }
         private string _email;
         public string Email
         {
@@ -87,7 +92,7 @@ namespace HRAppLib.Entities
             }
         }
 
-        public Applicant(int applicantId, string firstNameme, string lastName, string role, bool isEmployed, float hourlySalary, Department department, Resume qualification, string email, string phone)
+        public Applicant(int applicantId, string firstNameme, string lastName, string role, bool isEmployed, float hourlySalary, Department department, Resume resume, string email, string phone)
         {
             _applicantId = applicantId;
             FirstName = firstNameme;
@@ -96,14 +101,14 @@ namespace HRAppLib.Entities
             _isEmployed = isEmployed;
             HourlySalary = hourlySalary;
             Department = department;
-            this.qualification = qualification;
+            this.Resume = resume;
             Email = email;
             Phone = phone;
         }
 
         public override string ToString()
         {
-            return $"{ApplicantId}{FirstName},{LastName},{Role},{_isEmployed},{HourlySalary},{Department},{qualification},{Email},{Phone}";
+            return $"{ApplicantId}{FirstName},{LastName},{Role},{_isEmployed},{HourlySalary},{Department},{Resume},{Email},{Phone}";
         }
     }
 }

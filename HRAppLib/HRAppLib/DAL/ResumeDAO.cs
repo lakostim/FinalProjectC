@@ -5,7 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using HRAppLib.DAL.LibDSTableAdapters;
 using HRAppLib.Entities;
-
+/**
+ * @author ${IanIbrahim}
+ *
+ * ${tags}
+ */
 
 namespace HRAppLib.DAL
 {
@@ -32,7 +36,7 @@ namespace HRAppLib.DAL
             List<Resume> resumes = new List<Resume>();
             foreach (LibDS.ResumesRow resumeRow in _resDT.Rows)
             {
-                resumes.Add(new Resume(resumeRow.ResumeID, resumeRow.FirstName, resumeRow.LastName, resumeRow.Address, resumeRow.PreviousJob, resumeRow.Experience, new[] { resumeRow.Skills }, resumeRow.Email, resumeRow.Phone));
+                resumes.Add(new Resume(resumeRow.ResumeID, resumeRow.FirstName, resumeRow.LastName, resumeRow.Address, resumeRow.PreviousJob, resumeRow.Experience, resumeRow.Skills.Split(',') , resumeRow.Email, resumeRow.Phone));
             }
 
             return resumes;

@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/**
+ * @author ${IanIbrahim}
+ * Every Applicant will have a resume the app now holds one Resume per applicant 
+ * ${tags}
+ */
 namespace HRAppLib.Entities
 {
     public class Resume

@@ -7,7 +7,11 @@ using HRAppLib.DAL.LibDSTableAdapters;
 using HRAppLib.Entities;
 
 namespace HRAppLib.DAL
-{
+{/**
+ * @author ${IanIbrahim}
+ *
+ * ${tags}
+ */
     public class DepartmentDAO
     {
 

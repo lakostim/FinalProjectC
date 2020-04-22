@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/**
+ * @author ${IanIbrahim}
+ *
+ * ${tags}
+ */
 namespace HRAppLib.Entities
 {
     public class Interviews
@@ -12,8 +16,8 @@ namespace HRAppLib.Entities
         private string[] _answers;
         private int _score;
         private readonly int _interviewID;
-        private int _jobID;
-        private int _aapplicantID;
+        private Job _job;
+        private Applicant applicant;
         private DateTime _interviewDate;
         public int InterviewID => _interviewID;
         public string[] Questions
@@ -30,6 +34,26 @@ namespace HRAppLib.Entities
             get { return _answers; }
             set { _answers = value; }
         }
+        public int Score
+        {
 
+
+            get { return _score; }
+            set { _score = value; }
+        }
+        public Job Job { get; set; }
+        public Applicant Applicant { get; set; }
+        public DateTime InterviewDate { get; set; }
+
+        public Interviews(int interviewID, string[] questions, string[] answers, int score, Job job, Applicant applicant, DateTime interviewDate)
+        {
+            _interviewID = interviewID;
+            Questions = questions;
+            Answers = answers;
+            Score = score;
+            Job = job;
+            Applicant = applicant;
+            InterviewDate = interviewDate;
+        }
     }
 }

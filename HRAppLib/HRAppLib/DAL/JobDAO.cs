@@ -5,7 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using HRAppLib.DAL.LibDSTableAdapters;
 using HRAppLib.Entities;
-
+/**
+ * @author ${IanIbrahim}
+ *
+ * ${tags}
+ */
 namespace HRAppLib.DAL
 {
     public class JobDAO

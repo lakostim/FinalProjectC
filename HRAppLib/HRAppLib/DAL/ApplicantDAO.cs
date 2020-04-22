@@ -5,7 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using HRAppLib.DAL.LibDSTableAdapters;
 using HRAppLib.Entities;
-
+/**
+ * @author ${IanIbrahim}
+ *
+ * ${tags}
+ */
 namespace HRAppLib.DAL
 {
     public class ApplicantDAO
@@ -21,6 +25,7 @@ namespace HRAppLib.DAL
             _appTA.Fill(_empDT);
             _appTA.Fill(_libDS.Applicants);
             _depTA.Fill(_libDS.Departments);
+            _resumeTA.Fill(_libDS.Resumes);
         }
         public void AddApplicantRecord(string firstName, string lastName, string role, bool isEmployed, float hourlySalary, int department, int resumeID, string email, string phone)
         {
