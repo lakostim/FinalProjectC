@@ -34,7 +34,7 @@ namespace HRAppLib.DAL
             List<Department> departments = new List<Department>();
             foreach (LibDS.DepartmentsRow departmentRow in _departmentsDataTable.Rows)
             {
-                departments.Add(new Department(departmentRow.DepartmentNumber, departmentRow.Name,
+                departments.Add(new Department(departmentRow.DepartmentID, departmentRow.Name,
                     departmentRow.Location));
             }
 
