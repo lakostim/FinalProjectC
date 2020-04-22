@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HRAppLib.Entities
 {
-    class Qualification
+    public class Interviews
     {
     }
 }

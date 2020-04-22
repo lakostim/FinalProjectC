@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace HRAppLib.Entities
 {
-    class Rank
+    public enum Rank
     {
+        Entry,
+        Intermediate,
+        Management,
+        Senior,
+        Executive
     }
 }
