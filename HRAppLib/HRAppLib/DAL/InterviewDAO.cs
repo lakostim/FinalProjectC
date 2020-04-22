@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using HRAppLib.DAL.LibDSTableAdapters;
 using HRAppLib.Entities;
 /**
- * @author ${IanIbrahim}
+ * @author ${IΔN IbrΔhim}
  *this class comunicates with all tables to form a one single interview 
  * ${tags}
  */

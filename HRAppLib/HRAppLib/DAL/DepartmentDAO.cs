@@ -8,8 +8,8 @@ using HRAppLib.Entities;
 
 namespace HRAppLib.DAL
 {/**
- * @author ${IanIbrahim}
- *
+ * @author ${IΔN IbrΔhim}
+ *Holds department the Applicant works in 
  * ${tags}
  */
     public class DepartmentDAO

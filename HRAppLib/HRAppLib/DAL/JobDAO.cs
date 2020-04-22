@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using HRAppLib.DAL.LibDSTableAdapters;
 using HRAppLib.Entities;
 /**
- * @author ${IanIbrahim}
- *
+ * @author ${IΔN IbrΔhim}
+ * DAO to applications 
  * ${tags}
  */
 namespace HRAppLib.DAL
