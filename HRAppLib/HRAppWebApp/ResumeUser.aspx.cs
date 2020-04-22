@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HRAppWebApp
 {
-    public partial class Resume : System.Web.UI.Page
+    public partial class ResumeUser : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

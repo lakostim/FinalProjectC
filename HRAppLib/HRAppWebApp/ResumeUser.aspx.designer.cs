@@ -11,7 +11,7 @@ namespace HRAppWebApp
 {
 
 
-    public partial class Resume
+    public partial class ResumeUser
     {
 
         /// <summary>
