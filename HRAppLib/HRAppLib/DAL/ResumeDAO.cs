@@ -13,8 +13,7 @@ namespace HRAppLib.DAL
     {
         private ResumesTableAdapter _resTA = new ResumesTableAdapter();
 
-        private LibDS.ResumesDataTable _resDT =
-            new LibDS.ResumesDataTable();
+        private LibDS.ResumesDataTable _resDT = new LibDS.ResumesDataTable();
         public ResumeDAO()
         {
 
