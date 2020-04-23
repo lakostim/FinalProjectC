@@ -23,19 +23,23 @@ namespace HRAppWebApp.Applicants
             String email = TxtEmail.Text;
             String userName = TxtUsername.Text;
             String password = TxtPassword.Text;
-            String phone = "123";
-            String[] mySkills = {"test"};
+            String phone = TxtPhone.Text;
+            String address = TxtAddress.Text;
+            String[] mySkills = {"none"};
 
             //Create Appicant Object
 
-            Resume resume = new Resume(0, firstName, lastName, "test", "test", 15, mySkills, email, phone);
+            Resume resume = new Resume(0, firstName, lastName, address, "none", 15, mySkills, email, phone);
             Department department = new Department(0, "none", "none");
-            Applicant applicant = new Applicant(0, firstName, lastName, "test", false, 15, department, resume, email, phone);
+            Applicant applicant = new Applicant(0, firstName, lastName, "none", false, 15, department, resume, email, phone);
 
             //Push applicant data into database
-
+            /*
             ResumeDAO resumeDAO = new ResumeDAO();
-            resumeDAO.AddResumeRecord(firstName, lastName, "test", "test", 0, mySkills, email, phone);
+            resumeDAO.AddResumeRecord(firstName, lastName, address, "none", 0, mySkills, email, phone);
+            */
+            ApplicantDAO applicantDAO = new ApplicantDAO();
+            applicantDAO.AddApplicantRecord(firstName, lastName, "none", false, 15, 0, 0, email, phone);
         }
     }
 }

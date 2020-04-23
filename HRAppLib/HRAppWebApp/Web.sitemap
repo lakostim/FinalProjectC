@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="" title=""  description="">
-    <siteMapNode url="~/Resume.aspx" title="Resume"  description="" />
+    <siteMapNode url="~/ResumeForm.aspx" title="Resume"  description="" />
     <siteMapNode url="~/Jobs.aspx" title="Jobs"  description="" />
     <siteMapNode url="~/Application.aspx" title="Application"  description="" />
     <siteMapNode url="" title=""  description="" />

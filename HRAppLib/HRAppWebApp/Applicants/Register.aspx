@@ -22,6 +22,17 @@
           <label>Username</label>
           <asp:TextBox ID="TxtUsername" runat="server"></asp:TextBox>
       </div>
+
+      <div class="input-box">
+          <label>Phone Number</label>
+          <asp:TextBox ID="TxtPhone" runat="server"></asp:TextBox>
+      </div>
+
+      <div class="input-box">
+          <label>Address</label>
+          <asp:TextBox ID="TxtAddress" runat="server"></asp:TextBox>
+      </div>
+
       <div class="input-box">
           <label>Password</label>
           <asp:TextBox ID="TxtPassword" runat="server" TextMode="Password"></asp:TextBox>

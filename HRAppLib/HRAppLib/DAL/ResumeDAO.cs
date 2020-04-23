@@ -17,7 +17,7 @@ namespace HRAppLib.DAL
         public ResumeDAO()
         {
 
-            _resTA.Fill(_resDT);
+            //_resTA.Fill(_resDT);
         }
 
         //add a record
