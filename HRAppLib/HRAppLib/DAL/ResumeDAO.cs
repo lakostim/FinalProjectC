@@ -23,7 +23,7 @@ namespace HRAppLib.DAL
         //add a record
         public void AddResumeRecord(string firstName, string lastName, string address, string previousJob, int experience, string[] mySkills, string email, string phone)
         {
-            _resTA.Insert(  firstName,  lastName,  address,  previousJob,experience,  String.Join(",", mySkills),  email,  phone);
+            _resTA.Insert(firstName, lastName, address, previousJob, experience, String.Join(",", mySkills), email, phone);
         }
 
         //retrieve all records

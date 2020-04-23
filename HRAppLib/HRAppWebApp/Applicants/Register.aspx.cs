@@ -34,12 +34,12 @@ namespace HRAppWebApp.Applicants
             Applicant applicant = new Applicant(0, firstName, lastName, "none", false, 15, department, resume, email, phone);
 
             //Push applicant data into database
-            /*
+            
             ResumeDAO resumeDAO = new ResumeDAO();
             resumeDAO.AddResumeRecord(firstName, lastName, address, "none", 0, mySkills, email, phone);
-            */
+            
             ApplicantDAO applicantDAO = new ApplicantDAO();
-            applicantDAO.AddApplicantRecord(firstName, lastName, "none", false, 15, 0, 0, email, phone);
+            applicantDAO.AddApplicantRecord(firstName, lastName, "none", false, 15, 1, 1, email, phone);
         }
     }
 }
